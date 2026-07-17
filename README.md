@@ -66,6 +66,6 @@ Each topic folder may contain:
 
 Author
 
-Kattamuri Sanjana Priya Darshini
-B.Tech CSE
-Vignan University
+* Kattamuri Sanjana Priya Darshini
+* B.Tech CSE
+* Vignan University
