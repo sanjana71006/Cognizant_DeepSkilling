@@ -7,7 +7,7 @@
 | 1 | `01-CodeFirst-Relationships` | Code-First model, primary/foreign keys, navigation properties, One-to-One / One-to-Many / Many-to-Many relationships |
 | 2 | `02-CRUD-LINQ` | CRUD operations (AddAsync, Find, FirstOrDefault, ToListAsync, Update, Remove/RemoveRange), LINQ (Where, Select, OrderBy, DTO projection, aggregation) |
 | 3 | `03-Loading-Performance` | Eager/Lazy/Explicit loading, AsNoTracking, RowVersion concurrency, compiled queries, batch updates |
-
+ 
 ## How to run any project
 
 ```bash
