@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Community Event Portal</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header id="mainHeader">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="#location">Location</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Welcome -->
+    <section id="home">
+        <div id="welcomeBanner">
+            <h1>Local Community Event Portal</h1>
+            <p>Find and join events in your city.</p>
+
+            <span style="color:red;">Special Offer!</span>
+        </div>
+
+        <p class="highlight">Welcome to our community.</p>
+    </section>
+
+    <!-- Events -->
+    <section id="events">
+        <h2>Upcoming Events</h2>
+
+        <select id="categoryFilter">
+            <option value="all">All</option>
+            <option value="Technology">Technology</option>
+            <option value="Music">Music</option>
+            <option value="Workshop">Workshop</option>
+        </select>
+
+        <input type="text" id="searchInput" placeholder="Search events">
+
+        <div id="eventContainer"></div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+        <h2>Event Gallery</h2>
+
+        <table>
+            <tr>
+                <td><img src="event1.jpg" alt="Event 1" title="Event 1"></td>
+                <td><img src="event2.jpg" alt="Event 2" title="Event 2"></td>
+                <td><img src="event3.jpg" alt="Event 3" title="Event 3"></td>
+            </tr>
+            <tr>
+                <td><img src="event1.jpg" alt="Event 1" title="Event 1"></td>
+                <td><img src="event2.jpg" alt="Event 2" title="Event 2"></td>
+                <td><img src="event3.jpg" alt="Event 3" title="Event 3"></td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Registration -->
+    <section id="register">
+        <h2>Register for an Event</h2>
+
+        <form id="registrationForm">
+
+            <input type="text" id="name"
+                   placeholder="Name"
+                   required autofocus>
+
+            <input type="email" id="email"
+                   placeholder="Email"
+                   required>
+
+            <input type="tel" id="phone"
+                   placeholder="Phone"
+                   required>
+
+            <input type="date" id="date" required>
+
+            <select id="eventSelect">
+                <option value="">Select Event</option>
+            </select>
+
+            <textarea id="message"
+                      placeholder="Message"></textarea>
+
+            <p>Characters: <span id="charCount">0</span></p>
+
+            <button type="submit">Register</button>
+
+            <output id="confirmation"></output>
+        </form>
+    </section>
+
+    <!-- Feedback -->
+    <section id="feedback">
+        <h2>Feedback</h2>
+
+        <textarea id="feedbackText"
+                  placeholder="Enter feedback"></textarea>
+
+        <button id="feedbackBtn">Submit Feedback</button>
+    </section>
+
+    <!-- Video -->
+    <section>
+        <h2>Event Video</h2>
+
+        <video controls width="500" oncanplay="videoReady()">
+            <source src="event.mp4" type="video/mp4">
+        </video>
+
+        <p id="videoMessage"></p>
+    </section>
+
+    <!-- Location -->
+    <section id="location">
+        <h2>Find Nearby Events</h2>
+
+        <button onclick="getLocation()">Get Location</button>
+
+        <p id="locationResult"></p>
+    </section>
+
+    <!-- News -->
+    <section class="news">
+        <h2>Community News</h2>
+
+        <article>
+            Community events bring people together.
+            Local workshops, festivals and technology
+            events provide opportunities to learn,
+            meet people and participate in activities.
+        </article>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Local Community Event Portal</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
