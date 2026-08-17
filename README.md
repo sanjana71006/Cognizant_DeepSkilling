@@ -280,9 +280,10 @@ ng serve
 ## 👤 Author
 
 **Kattamuri Sanjana Priya Darshini**
+* **Registration Number:** 231FA04D07
 * **Degree:** B.Tech in Computer Science and Engineering
 * **Institution:** Vignan's Foundation for Science, Technology and Research (Vignan University)
-* **Program:** Cognizant Deep Skilling (DotNet & Angular Track)
+* **Program:** Cognizant Deep Skilling and Up Skilling (DotNet & Angular Track)
 
 ---
 
